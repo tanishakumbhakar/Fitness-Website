@@ -19,7 +19,7 @@ Users can also regularly check their health score from our website.
 * BOOTSTRAP
 * JAVASCRIPT
 * PHP
-* MYSQL
+* MYSQLi
 
 ## Setup
 Setup the XAMPP environment in your pc.
