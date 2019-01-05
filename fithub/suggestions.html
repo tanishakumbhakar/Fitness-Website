@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>PROJECT</title>
+<style type="text/css">
+h1.r{font-size:x-x-large;color:blue;font-family:Cooper Black;}
+</style>
+<script>
+function first()
+{
+if((document.forms[0].elements[2].value.length<10)||(document.forms[0].elements[2].value.length>10))
+{
+alert("Please input 10 characters in this field");
+}
+}
+
+</script>
+</head>
+<body bgcolor="DarkSalmon">
+<table border=1 bgcolor="yellow" width=100%  >
+<tr>
+<td><font color="blue" size="5"><A HREF="website.htm"><center>HOME</td>
+<td><font color="blue"size="5"><a href="products.htm"><center>PRODUCTS</td>
+<td><font color="blue" size="5"><A HREF="health.htm"><center>KNOW YOUR HEALTH</td>
+</a></td>
+
+</tr></table>
+<table bgcolor="orange" width=100% height=15% border=2
+bordercolor="red">
+<tr>
+<td><center><h1 class=r> F&nbsp;&nbsp;I&nbsp;&nbsp;T&nbsp;&nbsp; H&nbsp;&nbsp;U&nbsp;&nbsp;B&nbsp;&nbsp;</h1></center></td>
+</tr></table>
+<table border=1 bgcolor="yellow" width=100%  >
+<tr>
+	<td><font color="blue"size="5"><A HREF="suggestions.html"><center>FEEDBACK</td>
+<td><font color="blue" size="5"><A HREF="contact us - Copy.html"><center>CONTACT US</td>
+
+<td><font color="blue" size="5"><a href="login.php"><center>
+LOGOUT</a></td>
+
+</tr>
+</table>
+<br><br><br>
+<FONT STYLE="CENTURY SCHOOLBOOK" SIZE=4 color=black>
+
+<FORM>
+NAME:
+&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="TEXTAREA" NAME="NAME" SIZE="40" required/><BR><BR><BR>
+
+ADDRESS:
+&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="TEXTAREA" NAME="ADD" SIZE="40"><BR><BR><BR>
+PHONE NO:
+&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="TEXTAREA" NAME="PHN" SIZE="40" required/>
+<input type="button" Name=checktwo value=check  onClick="first()"><br><br><br>
+FOR HOW MANY YEARS ARE YOU USING THE SERVICES OF FITHUB:
+&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="TEXTAREA" NAME="YRS" SIZE="10"><BR><BR><BR>
+YOUR OPINION ABOUT THE QUALITY OF OUR SERVICES<BR><BR>
+
+EXCELLENT
+<INPUT TYPE=RADIO NAME="R" onclick="document.bgColor='green'">
+
+GOOD
+<INPUT TYPE=RADIO NAME="R"  onclick="document.bgColor='yellow'">
+
+SATISFACTORY
+<INPUT TYPE=RADIO NAME="R" onclick="document.bgColor='lightblue'">
+
+BAD
+<INPUT TYPE=RADIO NAME="R" onclick="document.bgColor='red'">
+<BR><BR>
+
+YOUR OPINION ABOUT THE QUALITY OF OUR PRODUCTS<BR><BR>
+EXCELLENT
+<INPUT TYPE=RADIO NAME="RS" onclick="document.bgColor='green'">
+GOOD
+<INPUT TYPE=RADIO NAME="RS"  onclick="document.bgColor='yellow'">
+SATISFACTORY
+<INPUT TYPE=RADIO NAME="RS"  onclick="document.bgColor='lightblue'">
+BAD
+<INPUT TYPE=RADIO NAME="RS" onclick="document.bgColor='red'">
+<BR><BR>
+OUR STAFF'S BEHAVIOUR<BR><BR>
+EXCELLENT
+<INPUT TYPE=RADIO NAME="RG"  onclick="document.bgColor='green'">
+GOOD
+<INPUT TYPE=RADIO NAME="RG" onclick="document.bgColor='yellow'">
+SATISFACTORY
+<INPUT TYPE=RADIO NAME="RG" onclick="document.bgColor='lightblue'">
+BAD
+<INPUT TYPE=RADIO NAME="RG"  onclick="document.bgColor='red'">
+<BR><BR>
+ARE YOU SATISFIED WITH OUR OFFERS<BR><BR>
+YES
+<INPUT TYPE="CHECKBOX" NAME=KKJD VALUE=NO>
+NO
+<INPUT TYPE="CHECKBOX" NAME=KKJD VALUE=YES>
+<BR><BR>
+IF YOU HAVE ANY COMPLAIN ABOUT US WRITE HERE<BR><BR>
+<textarea style="color:red; background-color:lightyellow"></textarea><BR>
+<script>
+function link()
+{
+window.location.href="LINK.htm";
+}
+</script>
+<input type="button" value="submit" onClick="link() ">
+<input type="reset" value="reset">
+
+
+</FORM>
+</BODY>
+</HTML>

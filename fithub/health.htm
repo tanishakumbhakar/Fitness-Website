@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>PROJECT</title>
+<style type="text/css">
+h1.r{font-size:x-x-large;color:blue;font-family:Cooper Black;}
+</style>
+</head>
+<body bgcolor="pink">
+<table border=1 bgcolor="yellow" width=100%  >
+<tr>
+<td><font color="blue" size="5"><A HREF="website.htm"><center>HOME</td>
+<td><font color="blue"size="5"><a href="products.htm"><center>PRODUCTS</td>
+<td><font color="blue" size="5"><A HREF="health.htm"><center>KNOW YOUR HEALTH</td>
+</a></td>
+
+</tr></table>
+<table bgcolor="orange" width=100% height=15% border=2
+bordercolor="red">
+<tr>
+<td><center><h1 class=r> F&nbsp;&nbsp;I&nbsp;&nbsp;T&nbsp;&nbsp; H&nbsp;&nbsp;U&nbsp;&nbsp;B&nbsp;&nbsp;</h1></center></td>
+</tr></table>
+<table border=1 bgcolor="yellow" width=100%  >
+<tr>
+	<td><font color="blue"size="5"><A HREF="suggestions.html"><center>FEEDBACK</td>
+<td><font color="blue" size="5"><A HREF="contact us - Copy.html"><center>CONTACT US</td>
+
+<td><font color="blue" size="5"><a href="login.php"><center>
+LOGOUT</a></td>
+
+</tr>
+</table>
+
+
+<h1> WANT TO KNOW YOUR HEALTH SCORE?</h1>
+<p> <b> Being fit is not a rocket science!! Here you can have a check on possible health risk </b> </p>
+<form onsubmit="return myfunc();" method="post">
+HEIGHT (in centimeters):<br>
+<input type="number" id="demo1" 
+name="HEIGHT (in centimeters)" min ="1" max="250">
+<br>
+<br>
+WEIGHT (in kilograms):<br>
+<input type="number" id="demo2"
+name="WEIGHT (in kilograms)" min ="1" max="500">
+<br>
+<br>
+AGE (in years):<br>
+<input type="number" id="demo3"
+name="AGE (in years)" min="1" max="150" >
+<br>
+<br>
+GENDER:<br>
+<input type="radio" id="g1"
+name="GENDER" value="male"
+checked> Male<br>
+<input type="radio" id="g2"
+name="GENDER" value="female">
+Female<br>
+<br>
+LIFESTYLE:<br>
+<input type="radio" id="l1"
+name="LIFESTYLE" value="sedentary"
+checked> Sedentary<br>
+<input type="radio" id="l2"
+name="LIFESTYLE" value="moderately active">
+Moderately Active<br>
+<input type="radio" id="l3"
+name="LIFESTYLE" value="highly active">
+Highly Active<br>
+<input type="radio" id="l4"
+name="LIFESTYLE" value="atheletic">
+Atheletic<br>
+<br>
+<input type="submit" id="demo4" value="Know Your Health Score!">
+<br>
+<br>
+<input type="reset" value="Reset">
+</form>
+
+<script>
+function myfunc(){
+var bmi,h,w,g;
+h=Number(document.getElementById("demo1").value);
+w=Number(document.getElementById("demo2").value);
+
+if(document.getElementById("g1").checked){
+    g=document.getElementById("g1").value;
+}
+else
+{
+	g=document.getElementById("g2").value;
+}
+
+
+bmi=(w/(h*h))*10000;
+
+window.alert("Your BMI is :\n"+bmi);
+
+
+if(g=="male"){
+ 	if(bmi<17.5){
+		window.alert("Possible Health Risks:\nAnorexia \n Weakness \n Low Muscle Mass \n Weak Digestion ");
+	}
+	else if(bmi>=17.5 && bmi<20.7){
+		window.alert("Possible Health Risks:\nYou are Underweight \n osteoporosis \n hair fall <br> dry skin \n Protein Deficiency");
+	}
+	else if(bmi>=20.7 && bmi<26.4){
+		window.alert(" Congratulations!! your BMI is in normal range..you have probably low risk of any health diseases ");
+	}
+	else if(bmi>=26.4 && bmi<27.8){
+		window.alert("Possible Health Risks:\nYou are Marginally overweight \n Low Life Quality \n Infertility");
+	}
+	else if(bmi>=27.8 && bmi<31.1){
+		window.alert("Possible Health Risks:\nYou are Overweight \n Body Pains \n Increased TSH Levels ");
+	}
+	else if(bmi>=31.1 && bmi<34.9){
+		window.alert("Possible Health Risks\nYou are very overweight or obese \n Anxiety \n Breathing Problems \n Sleep Apnea ");
+	}
+	else if(bmi>=34.9 && bmi<39.9){
+		window.alert("Possible Health Risks:\nYou are Highly obese \n Depression \n High Blood Pressure \n Cardiovascular Diseases ");
+	}
+	else if(bmi>=39.9 && bmi<=49.9){
+		window.alert("Possible Health Risks:\nYou are Morbidly obese \n Type 2 diabetes mellitus \n Increased Snoring ");
+	}
+	else if(bmi >49.9)
+	{
+		window.alert("Possible Health Risks:\nYou are Severly obese \n High Blood Pressure \n Very high risk of cardiovascular diseases \n breathing problems ");
+	}
+	
+}else if(g=="female") {
+	
+	if(bmi<17.5){
+		window.alert("Possible Health Risks\nAnorexia \n Weakness \n Low Muscle Mass \n Weak Digestion  ");
+	}
+	else if(bmi>=17.5 && bmi<19.2){
+		window.alert("Possible Health Risks:\nYou are Underweight \n osteoporosis \n hair fall \n dry skin \n Protein Deficiency");
+	}
+	else if(bmi>=19.2 && bmi<25.8){
+		window.alert(" Congratulations!! your BMI is in normal range..you have probably low risk of any health diseases ");
+	}
+	else if(bmi>=25.8 && bmi<27.3){
+		window.alert("Possible Health Risks:\n You are Marginally overweight \n Low Life Quality \n Infertility  ");
+	}
+	else if(bmi>=27.3 && bmi<32.3){
+		window.alert("Possible Health Risks:\nYou are Overweight \n Body Pains \n Increased TSH Levels  ");
+	}
+	else if(bmi>=32.3 && bmi<34.9){
+		window.alert("Possible Health Risks:\nYou are very overweight or obese \n Anxiety \n Breathing Problems \n Sleep Apnea  ");
+	}
+	else if(bmi>=34.9 && bmi<39.9){
+		window.alert("Possible Health Risks:\n You are Highly obese \n Depression \n High Blood Pressure \n Cardiovascular Diseases  ");
+	}
+	else if(bmi>=39.9 && bmi<=49.9){
+		window.alert("Possible Health Risks:\n  You are Morbidly obese \n Type 2 diabetes mellitus \n Increased Snoring ");
+	}
+	else{
+		window.alert("Possible Health Risks:\n You are Severly obese \n High Blood Pressure \n Very high risk of cardiovascular diseases \n breathing problems");
+	}
+
+}
+
+}
+</script>
+
+
+
+</body>
+
+</html>
